@@ -14,6 +14,8 @@ settingsSelectDiv.classList.add('settingsSelectDiv');
 // QUESTION # INPUT, APPEND TO ABOVE DIV
 const inputVal = document.querySelector('.questionVal');
 inputVal.setAttribute('type', 'number');
+inputVal.setAttribute('max', 50);
+inputVal.setAttribute('min', 1);
 inputVal.value = 10;
 settingsSelectDiv.append(inputVal);
 
@@ -138,6 +140,7 @@ function outputPage(){
 
         // QUESTION DIV
         const que1 = genElement(mainDiv, 'div', question.question);
+        que1.classList.add('question');
         game.eles.length = 0;
         const optsDiv = genElement(output, 'div', '');
         optsDiv.classList.add('optsDiv');

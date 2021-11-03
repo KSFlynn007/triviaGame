@@ -2,6 +2,7 @@
 
 
 body{ 
+    margin: 60px 0;
     font-family: 'Crimson Text',
     serif;
     font-size: 18px;
@@ -22,7 +23,8 @@ h1{
     width: 75%;
     margin: 40px auto;
     padding: 10px;
-    background-color: #ddd;
+    background-color: rgb(191, 186, 211);
+    ;
 }
 
 .active > *{
@@ -35,7 +37,7 @@ h1{
     margin: auto;
     justify-content: center;
     align-items: center;
-    background-color: #ccc;
+    background-color: rgb(191, 186, 211);
     padding: 20px;
 }
 
@@ -83,7 +85,8 @@ button:hover{
 }
 
 .startBtn,
-.replayBtn{
+.replayBtn,
+.nextBtn{
     border: none;
     padding: 15px;
     font-size: 15px;
@@ -101,4 +104,33 @@ button:hover{
 .finalMessage{
     font-size: 20px;
     text-align: center;
+}
+
+@media all and (max-width: 960px){
+    .settingsSelectDiv {
+        width: 60%;
+        flex-direction: column;
+    }
+
+    .active{
+        width: 40%
+    }
+
+    .question{
+        text-align: center;
+    }
+
+    .optsDiv{
+        flex-direction: column;
+    }
+
+    .optionButtons{
+        margin: 10px 0;
+    }
+
+    .nextBtn{
+        display: block;
+        margin: auto;
+    }
+
 }
