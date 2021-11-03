@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Josefin+Sans:wght@100;400;700&display=swap');
+
+
+body{ 
+    font-family: 'Crimson Text',
+    serif;
+    font-size: 18px;
+}
+
+.hidden{
+    display: none;
+}
+
+h1{
+    text-align: center;
+    margin: 15px 0 5px 0;
+    font-family: 'Josefin Sans',
+    sans-serif;
+}
+
+.active{
+    width: 75%;
+    margin: 40px auto;
+    padding: 10px;
+    background-color: #ddd;
+}
+
+.active > *{
+    padding: 10px;
+}
+
+.settingsSelectDiv {
+    display: flex;
+    width: 75%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    padding: 20px;
+}
+
+.settingsSelectDiv > * {
+    margin: 10px;
+}
+
+.settingsText{
+    text-align: center;
+    padding: 10px;
+}
+
+select{
+    text-transform: capitalize;
+    padding: 5px;
+}
+
+input,
+button{
+    padding: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.optsDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.optionButtons{
+    margin: 0 10px;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.message{
+    text-align: center
+}
+
+.nextDiv{
+    justify-content: center;
+}
+
+.startBtn,
+.replayBtn{
+    border: none;
+    padding: 15px;
+    font-size: 15px;
+    background-color: rgb(69, 49, 156);
+    color: white;
+    font-family: 'Josefin Sans',
+    sans-serif;
+}
+
+.replayBtn{
+    display: block;
+    margin: 5px auto;
+}
+
+.finalMessage{
+    font-size: 20px;
+    text-align: center;
+}
